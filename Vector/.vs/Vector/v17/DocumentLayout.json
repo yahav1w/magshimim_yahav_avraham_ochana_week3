@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\came_with_computer\\now\\magshimim_yahav_avraham_ochana_week3\\Vector\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17290609-D4F8-4F08-BEDD-B4DFD646E84A}|Vector.vcxproj|C:\\Users\\user\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\came_with_computer\\now\\magshimim_yahav_avraham_ochana_week3\\Vector\\Vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{17290609-D4F8-4F08-BEDD-B4DFD646E84A}|Vector.vcxproj|solutionrelative:Vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{17290609-D4F8-4F08-BEDD-B4DFD646E84A}|Vector.vcxproj|C:\\Users\\user\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\came_with_computer\\now\\magshimim_yahav_avraham_ochana_week3\\Vector\\Vector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{17290609-D4F8-4F08-BEDD-B4DFD646E84A}|Vector.vcxproj|solutionrelative:Vector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17290609-D4F8-4F08-BEDD-B4DFD646E84A}|Vector.vcxproj|C:\\Users\\user\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\came_with_computer\\now\\magshimim_yahav_avraham_ochana_week3\\Vector\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{17290609-D4F8-4F08-BEDD-B4DFD646E84A}|Vector.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17290609-D4F8-4F08-BEDD-B4DFD646E84A}|Vector.vcxproj|C:\\Users\\user\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\came_with_computer\\now\\magshimim_yahav_avraham_ochana_week3\\Vector\\Vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{17290609-D4F8-4F08-BEDD-B4DFD646E84A}|Vector.vcxproj|solutionrelative:Vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\came_with_computer\\now\\magshimim_yahav_avraham_ochana_week3\\Vector\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\user\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\came_with_computer\\now\\magshimim_yahav_avraham_ochana_week3\\Vector\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAiwJIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-03T17:57:11.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T17:57:11.949Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Vector.cpp",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\came_with_computer\\now\\magshimim_yahav_avraham_ochana_week3\\Vector\\Vector.cpp",
               "RelativeDocumentMoniker": "Vector.cpp",
               "ToolTip": "C:\\Users\\user\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\came_with_computer\\now\\magshimim_yahav_avraham_ochana_week3\\Vector\\Vector.cpp",
               "RelativeToolTip": "Vector.cpp",
-              "ViewState": "AQIAAJ4AAAAAAAAAAAAQwLIAAABIAAAA",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAmwLgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-03T17:20:12.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Vector.h",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\came_with_computer\\now\\magshimim_yahav_avraham_ochana_week3\\Vector\\Vector.h",
               "RelativeDocumentMoniker": "Vector.h",
               "ToolTip": "C:\\Users\\user\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\came_with_computer\\now\\magshimim_yahav_avraham_ochana_week3\\Vector\\Vector.h",
               "RelativeToolTip": "Vector.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T17:09:25.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T17:09:25.106Z"
             }
           ]
         }

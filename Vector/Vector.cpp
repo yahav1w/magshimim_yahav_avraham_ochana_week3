@@ -9,7 +9,7 @@ Vector::Vector(int n)
 	{
 		n = 2;
 	}
-	this->_element = new int[n];
+	this->_elements = new int[n];
 	this->_capacity = n;
 	this->_size = 0;
 	this->_resizeFactor = n;
@@ -23,20 +23,17 @@ Vector::Vector(const Vector& other)
 	this->_size = other._size;
 	this->_capacity = other._capacity;
 	this->_resizeFactor = other._resizeFactor;
-	this->_element = new int[this->_size];
+	this->_elements = new int[this->_size];
 	for (int i = 0;i < this->_size;i++)
 	{
-		this->_element[i] = other._element[i];
+		this->_elements[i] = other._elements[i];
 	}
 }
 
 //the function delete the vector
 Vector::~Vector()
 {
-	for (int i = this->_size - 1;i > 0 ;i--)
-	{
-		this->_element[i];
-	}
+	delete[](this->_elements);
 }
 
 //the function return the current size of the array that used
@@ -59,7 +56,7 @@ int Vector::resizeFactor() const
 
 //the function check if the Vector is empty
 //return true- if empty else return false
-bool Vector::empty()
+bool Vector::empty() const
 {
 	if (this->_size == 0)
 	{
@@ -78,12 +75,12 @@ void Vector::push_back(const int& val)
 		int* temp = new int[this->_capacity];
 		for (int i = 0;i < this->_size;i++)
 		{
-			temp[i] = *(this->_element+i);//saving the elements in the array
+			temp[i] = this->_elements[i];//saving the elements in the array
 		}
-		delete[](this->_element);//delete previos array
-		this->_element = temp;
+		delete[](this->_elements);//delete previos array
+		this->_elements = temp;
 	}
-	this->_element[this->_size] = (val);//add a new variable to the array
+	this->_elements[this->_size] = (val);//add a new variable to the array
 	this->_size++;//the current size using add by 1
 }
 
@@ -93,8 +90,8 @@ int Vector::pop_back()
 {
 	if (!this->empty())
 	{
-		int val = this->_element[this->_size-1];
-		this->_element[this->_size-1] = 0;
+		int val = this->_elements[this->_size-1];
+		this->_elements[this->_size-1] = 0;
 		this->_size--;
 		return val;
 	}
@@ -104,7 +101,7 @@ int Vector::pop_back()
 
 //the function change the size of the array to at least n
 //n - the new at least size of the array
-void Vector::reserve(int n)
+void Vector::reserve(const int n)
 {
 	if (this->_capacity < n)
 	{
@@ -120,7 +117,7 @@ void Vector::reserve(int n)
 
 //the function change the size of the array to at least n 
 //but can delete places to the array in some cases
-void Vector::resize(int n)
+void Vector::resize(const int n)
 {
 	if (n <= this->_capacity)
 	{
@@ -137,23 +134,22 @@ void Vector::resize(int n)
 }
 
 //the function put the variable "var" into all the open places in the array(element)
-void Vector::assign(int val)
+void Vector::assign(const int val)
 {
 	for (int i = 0;i < this->_size;i++)
 	{
-		this->_element[i] = val;
+		this->_elements[i] = val;
 	}
 }
 
 //the function change the size of the array to at least n and  
 //put the variable "var" into all the open places in the array(element)
-void Vector::resize(int n, const int& val)
+void Vector::resize(const int n, const int& val)
 {
-	this->assign(val);
 	this->resize(n);
-	for (int i = this->_size;i < this->_capacity;i++)
+	for (int i = this->_size;i < this->_capacity-1;i++)
 	{
-		this->_element[i] = val;
+		this->_elements[i] = val;
 	}
 	this->_size = this->_capacity;
 }
@@ -166,10 +162,10 @@ Vector& Vector::operator=(const Vector& other)
 	this->_size = other._size;
 	this->_capacity = other._capacity;
 	this->_resizeFactor = other._resizeFactor;
-	this->_element = new int[this->_size];
+	this->_elements = new int[this->_size];
 	for (int i = 0;i < this->_size;i++)
 	{
-		this->_element[i] = other._element[i];
+		this->_elements[i] = other._elements[i];
 	}
 	return *this;
 }
@@ -177,13 +173,12 @@ Vector& Vector::operator=(const Vector& other)
 //the operator help us use the vector as a list of numbers
 //return the value in the index requested if the index in the array size
 //if not return the first variable in the array and print "out of range"
-int Vector::operator[](int var) const
+int& Vector::operator[](int n) const
 {
-	int number = 0;
-	if (var > this->_size || var < 0)
+	if (n >= this->_size || n < 0)
 	{
 		std::cout << "out of range" << std::endl;
-		return this->_element[0];
+		return this->_elements[0];
 	}
-	return this->_element[var];
+	return this->_elements[n];
 }

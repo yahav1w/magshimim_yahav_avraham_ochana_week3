@@ -248,6 +248,17 @@ void test3()
 
 int main()
 {
+	Vector* a = new Vector(7);
+	for (int i = 0;i < 10;i++)
+	{
+		a->push_back(1);
+	}
+	a->resize(15, 1234);
+	for (int i = 0;i < a->size();i++)
+	{
+		int var = a->operator[](i);
+	}
+
 	cout << "\n*******************************" << endl;
 	cout << "******** Basic Tests **********" << endl;
 	cout << "*******************************" << endl;
